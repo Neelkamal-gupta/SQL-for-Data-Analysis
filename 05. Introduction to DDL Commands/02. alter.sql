@@ -17,3 +17,7 @@ select * from employee;
 -- Drop the column
 alter table employee drop column mail;
 select * from employee;
+
+--add a new column with a default value
+ALTER TABLE employee 
+ADD COLUMN marital_status VARCHAR(20) DEFAULT 'Unknown';
